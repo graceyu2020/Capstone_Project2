@@ -33,14 +33,19 @@ As GDP, employment data, population data are recorded on yearly basis, I resampl
 
 3.3 Linear Regression Model for Houston
 Houston House price has very high correlation with GDP, total employment and population, then I build a linear regression model between Houston House price and GDP, population and employment.
+
 House Price = -38699.16*GDP+61567.69*Total_Employment-1527.66*Population
+
 GDP, total employment and population has very high correlation with each other, so we can drop features like total employment and population, decrease the prediction model order to one.
 For Linear Regression model both multi-variable and single variable models are tested.
+
 HOUSE PRICE = 0.00042*GDP-695.3363
+
 Single variable model has better fit.
 
 3.4 Linear Regression Model for Chicago
-Chicago house price has very low correlation with GDP, total employment and population. GDP has very high correlation with total employment, GDP has negative relationship with population
+Chicago house price has very low correlation with GDP, total employment and population. GDP has very high correlation with total employment, GDP has negative relationship with population.
+
 HOUSE PRICE = -11176.31*GDP+12039.75*TOTAL_EMPLOYMENT-9225.55*POPULATION
 
 Section 4 house price time series analysis
@@ -53,6 +58,6 @@ Section 4 house price time series analysis
 
 4.4 Calculate ACF, PACF to determine the parameter AR(p), I(d), MA(q) for ARIMA model.
 
-4. 5 Final ARIMA model for Houston house. Considering our time series is univariate time series with trend and without seasonal components, decided to use ARIMA (1,1,1) model on the original data.
+4.5 Final ARIMA model for Houston house. Considering our time series is univariate time series with trend and without seasonal components, decided to use ARIMA (1,1,1) model on the original data.
 
 4.6 Repeat same process for Chicago house price time series.
